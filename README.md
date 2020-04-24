@@ -59,8 +59,9 @@ SONG_DATA='s3://udacity-dend/song_data'
 
 ```
 
-#### Load
+#### Run project
 
+    $ python create_tables.py
     $ python etl.py
 
 
