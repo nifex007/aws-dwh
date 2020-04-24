@@ -4,6 +4,12 @@ from sql_queries import create_table_queries, drop_table_queries
 
 
 def drop_tables(cur, conn):
+    """
+    Deletes table if they already exist.
+    :param cur:
+    :param conn:
+    :return:
+    """
     for query in drop_table_queries:
         cur.execute(query)
         print('Dropping Tables')
@@ -11,6 +17,12 @@ def drop_tables(cur, conn):
 
 
 def create_tables(cur, conn):
+    """
+    Creates staging tables
+    :param cur:
+    :param conn:
+    :return:
+    """
     for query in create_table_queries:
         cur.execute(query)
         print(query, 'Created!')
