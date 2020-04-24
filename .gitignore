@@ -1,0 +1,4 @@
+# Secret keys in here
+dwh.cfg
+.idea/
+__pycache__/
